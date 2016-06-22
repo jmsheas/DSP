@@ -1,0 +1,20 @@
+{
+  "name": "dsp",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Jack Shea"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
