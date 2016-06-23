@@ -1,2 +1,7 @@
 /bower_components/
 /node_modules/
+img/Thumbs.db
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/.name
