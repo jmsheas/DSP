@@ -1,0 +1,53 @@
+#navBarMain {
+    width: 100%;
+    height: 10%;
+    left: 0;
+
+    position: fixed;
+    z-index: 10;
+
+    background-color: #333333;
+
+    padding-right: 1%;
+
+    border-bottom: 2px solid darkgreen;
+}
+
+#navBarMain li {
+    float: right;
+}
+
+#logo-nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navItem {
+    float: right;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navItem a {
+    color: white;
+    font-size: large;
+    font-family: 'Roboto Slab', serif;
+}
+
+ul.nav a:hover {
+    color: white;
+    border-bottom: 1px solid darkgreen;
+
+    background-color: transparent !important;
+}
+
+ul.nav a:focus {
+    color: white;
+    border-bottom: 1px solid darkgreen;
+
+    background-color: transparent !important;
+}

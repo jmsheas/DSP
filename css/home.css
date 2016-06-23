@@ -1,0 +1,148 @@
+#homePage {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+
+    width: 100%;
+
+    background: url('/img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    overflow-x: hidden;
+
+    z-index: 0;
+}
+
+#overlayBG {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    background: url('/img/background_blurred.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    animation-name: blurOn;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+
+    z-index: 1;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    z-index: 2;
+}
+
+#title f1 {
+    font-family: Aharoni;
+    color: white;
+    font-size: 10vh;
+}
+
+.greenShadow {
+    text-shadow: 0 0 0.3em darkgreen;
+}
+
+.orangeShadow {
+    text-shadow: 0 0 0.3em orange;
+}
+
+#bottom-span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: white;
+}
+
+#top-span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    background: white;
+}
+
+#title span {
+    animation-name: hoverOff-span;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.iconLink {
+    height: 48px;
+    width: 48px;
+}
+
+#iconRack {
+    width: 500px;
+
+    position: absolute;
+    top: 7.5%;
+
+    padding-bottom: 5%;
+
+    animation-name: blurOff;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+#iconRack a {
+    margin-left: 38.5px;
+    margin-right: 38.5px;
+}
+
+#title:hover #iconRack {
+    animation-name: blurOn;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+#overlayBG:hover {
+    animation-name: blurOff;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+#title:hover .line-span {
+    animation-name: hoverOn-span;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hoverOn-span {
+    from { width: 0%;  }
+    to {  width: 100%;  }
+}
+@keyframes hoverOff-span {
+    from {  width: 100%;  }
+    to {  width: 0%;  }
+}
+
+@keyframes blurOn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes blurOff {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

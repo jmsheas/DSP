@@ -8,7 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/home.css">
+        <!--<link rel="stylesheet" href="css/footer.css">-->
 
         <!-- Fonts need fixed -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -20,9 +24,9 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div ng-include='"templates/header.html"'></div>
+        <div ng-include='"templates/navbar.html"'></div>
         <div ng-view></div>
-        <div ng-include='"templates/footer.html"'></div>
+        <!--<div ng-include='"templates/footer.html"'></div>-->
 
         <!-- Fix for node.js -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
