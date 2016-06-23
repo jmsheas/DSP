@@ -1,8 +1,6 @@
 /**
  * Main AngularJS Web Application
  */
-var angular = require('angular');
-var bootstrap = require('bootstrap');
 var app = angular.module('DSP', [
   'ngRoute'
 ]);
@@ -35,4 +33,4 @@ app.controller('PageCtrl', function (/* $scope, $location, $http */) {
   $('.carousel').carousel({
     interval: 5000
   });
-
+});
