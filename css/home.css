@@ -40,12 +40,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
 
     padding-right: 10%;
     padding-left: 10%;
     padding-top: 5%;
-    padding-bottom: 5%;
+    /*padding-bottom: 5%;*/
 
     z-index: 2;
 }
@@ -97,7 +97,7 @@
     width: 500px;
 
     position: absolute;
-    top: 7.5%;
+    top: 10%;
 
     padding-bottom: 5%;
 
@@ -117,7 +117,7 @@
     animation-fill-mode: forwards;
 }
 
-#overlayBG:hover {
+#homePage:hover #overlayBG {
     animation-name: blurOff;
     animation-duration: 0.75s;
     animation-fill-mode: forwards;
