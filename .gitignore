@@ -1,2 +1,11 @@
 /bower_components/
 /node_modules/
+img/Thumbs.db
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/.name
+img/slide/Thumbs.db
+.idea/encodings.xml
+.idea/modules.xml
+.idea/DSP.iml
