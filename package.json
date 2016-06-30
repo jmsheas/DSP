@@ -1,23 +1,13 @@
 {
-  "name": "OpenShift-Sample-App",
+  "name": "dsp",
   "version": "1.0.0",
-  "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
-  "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
   },
-  "homepage": "http://www.openshift.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
+  "author": "Jack Shea",
+  "license": "MIT",
 
   "engines": {
     "node": ">= 0.6.0",
@@ -28,9 +18,10 @@
     "express": "~3.4.4",
     "angular": "^1.5.7",
     "angular-route": "^1.5.7",
-    "bootstrap.native": "^1.0.2",
+    "bootstrap.native": "^1.0.2"
   },
+
   "devDependencies": {},
-  "bundleDependencies": [],
+
   "main": "server.js"
 }
