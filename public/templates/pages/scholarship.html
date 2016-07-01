@@ -8,8 +8,12 @@
                     </h2>
                     <hr>
                 </div>
-                <div class="col-lg-12">
-                    <p>Thank you for your interest in the Delta Sigma Phi Recruitment Scholarship. Our organization celebrates academic and extracurricular success at our university through a competitive scholarship program. Please complete the following information. By applying for this scholarship you are not committing yourself to membership in the sponsoring organization or any other organization. The scholarship will be awarded to the four most outstanding applicants, who will each receive $250.</p>
+                <div class="col-lg-8">
+                    <p>Thank you for your interest in the Delta Sigma Phi Better Man Scholarship. Our organization celebrates academic and extracurricular success at our university through a competitive scholarship program for incoming male freshmen. Please complete the following information. To learn more about what it takes to be a better man click on the image to the right.</p>
+                    <p>By applying for this scholarship you are not committing yourself to membership in the sponsoring organization or any other organization. The scholarship will be awarded to the most outstanding applicant who will receive $1000 towards his tuition. Please send any questions as well as your completed application to <a href="mailto:scholarship@illinideltasigs.org">scholarship@illinideltasigs.org</a>.</p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://www.deltasig.org/fraternity/the-better-man/"><img class="img-responsive img-border-right" src="/img/betterman.png" alt=""></a>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -25,67 +29,76 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>First Name</label>
-                                <input type="text" class="form-control" name="firstname" required=""/>
+                                <input type="text" class="form-control" id="firstname" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Last Name</label>
-                                <input type="text" class="form-control" name="lastname" required=""/>
+                                <input type="text" class="form-control" id="lastname" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Email</label>
-                                <input type="text" class="form-control" name="email" required=""/>
+                                <input type="text" class="form-control" id="email" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Phone</label>
-                                <input type="text" class="form-control" name="phone" required=""/>
+                                <input type="text" class="form-control" id="phone" required=""/>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Address Line</label>
-                                <input type="text" class="form-control" name="adressline" required=""/>
+                                <input type="text" class="form-control" id="adressline" required=""/>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label>City</label>
-                                <input type="text" class="form-control" name="city" required=""/>
+                                <input type="text" class="form-control" id="city" required=""/>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label>State</label>
-                                <input type="text" class="form-control" name="state" required=""/>
+                                <input type="text" class="form-control" id="state" required=""/>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label>Zip Code</label>
-                                <input type="text" class="form-control" name="zip" required=""/>
+                                <input type="text" class="form-control" id="zip" required=""/>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label>Date of Birth</label>
-                                <input type="text" class="form-control" name="birthday" required=""/>
+                                <input type="text" class="form-control" id="birthday" required=""/>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label>High School</label>
-                                <input type="text" class="form-control" name="highschool" required=""/>
+                                <input type="text" class="form-control" id="highschool" required=""/>
                             </div>
-                            <div class="form-group col-md-4">
-                                <label>Class Rank <small>(Rank / Class Size)</small></label>
-                                <input type="text" class="form-control" name="classrank" required=""/>
+                            <div class="form-group col-md-2">
+                                <label>Class Rank <small>(Rank / Total)</small></label>
+                                <input type="text" class="form-control" id="classrank" required=""/>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-2">
                                 <label>GPA <small>(GPA / Total)</small></label>
-                                <input type="text" class="form-control" name="gpa" required=""/>
+                                <input type="text" class="form-control" id="gpa" required=""/>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-2">
+                                <label>Current Year</label>
+                                <select class="form-control" id="year">
+                                    <option>Freshman</option>
+                                    <option>Sophomore</option>
+                                    <option>Junior</option>
+                                    <option>Senior</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
                                 <label>Intended Major</label>
-                                <input type="text" class="form-control" name="major" required=""/>
+                                <input type="text" class="form-control" id="major" required=""/>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Honors, Achievements, Awards</label>
-                                <textarea class="form-control" rows="3" name="honors" required=""></textarea>
+                                <textarea class="form-control" rows="3" id="honors" required=""></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Community Service/Extracurricular Activities</label>
-                                <textarea class="form-control" rows="3" name="service" required=""></textarea>
+                                <textarea class="form-control" rows="3" id="service" required=""></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Our fraternity prides itself on creating better men, that in turn, help the world around us. What are some specific qualities that a better man has? When in your life have you demonstrated one of these qualities, or when have you been challenged by another man to adopt some of these qualities? Please keep answer under 500 words.</label>
-                                <textarea class="form-control" rows="6" name="essay" required=""></textarea>
+                                <textarea class="form-control" rows="6" id="essay" required=""></textarea>
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
