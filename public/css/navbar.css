@@ -1,53 +1,77 @@
-#navBarMain {
-    width: 100%;
-    height: 10%;
-    left: 0;
+@media (min-width:481px){
 
-    position: fixed;
-    z-index: 10;
+    #navBarMain {
+        width: 100%;
+        height: 10%;
+        left: 0;
+        top: 0;
 
-    background-color: #333333;
+        position: fixed;
+        z-index: 10;
 
-    padding-right: 1%;
+        background-color: #333333;
 
-    border-bottom: 2px solid darkgreen;
+        padding-right: 1%;
+
+        border-bottom: 2px solid darkgreen;
+    }
+
+    #navBarMain li {
+        float: right;
+    }
+
+    #logo-nav {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .navItem {
+        float: right;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .navItem a {
+        color: white;
+        font-size: large;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    ul.nav a:hover {
+        color: white;
+        border-bottom: 1px solid darkgreen;
+
+        background-color: transparent !important;
+    }
+
+    ul.nav a:focus {
+        color: white;
+        border-bottom: 1px solid darkgreen;
+
+        background-color: transparent !important;
+    }
 }
 
-#navBarMain li {
-    float: right;
-}
+@media (max-width: 480px){
+    
+    #navBarMain {
+        background-color: rgb(34, 143, 84);
+    }
 
-#logo-nav {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    .navItem a {
+        color: white;
+    }
 
-.navItem {
-    float: right;
+    #logo-nav {
+        display: none;
+    }
 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    ul.nav a:focus {
+        color: rgb(34, 143, 84);
+    }
 
-.navItem a {
-    color: white;
-    font-size: large;
-    font-family: 'Roboto Slab', serif;
-}
-
-ul.nav a:hover {
-    color: white;
-    border-bottom: 1px solid darkgreen;
-
-    background-color: transparent !important;
-}
-
-ul.nav a:focus {
-    color: white;
-    border-bottom: 1px solid darkgreen;
-
-    background-color: transparent !important;
 }
