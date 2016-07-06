@@ -13,3 +13,5 @@ public/img/exec/Thumbs.db
 *.db
 .idea/libraries/DSP_node_modules.xml
 *.db
+public/img/exec/Thumbs.db
+*.db

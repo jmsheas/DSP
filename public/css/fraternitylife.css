@@ -1,4 +1,10 @@
 .life-pic {
-	padding-left: 10px;
-	padding-bottom: 10px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+
+	height: 300px;
+	width: 500px;
+
+	background-image: url("../img/fratlife.jpg");
+	background-size: cover;
 }
