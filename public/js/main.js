@@ -19,13 +19,13 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/scholarship", {templateUrl: "templates/pages/scholarship.html", controller: "PageCtrl"})
 
       //mobile redirects
-      .when("/m", {templateUrl: "templates/pages/about.html", controller: "PageCtrl"})
-      .when("/fraternitylife/m", {templateUrl: "templates/pages/fraternitylife.html", controller: "PageCtrl"})
-      .when("/about/m", {templateUrl: "templates/pages/about.html", controller: "PageCtrl"})
-      .when("/recruitment/m", {templateUrl: "templates/pages/recruitment.html", controller: "PageCtrl"})
-      .when("/alumni/m", {templateUrl: "templates/pages/alumni.html", controller: "PageCtrl"})
-      .when("/login/m", {templateUrl: "templates/pages/login.html", controller: "PageCtrl"})
-      .when("/scholarship/m", {templateUrl: "templates/pages/scholarship.html", controller: "PageCtrl"})
+      //.when("/m", {templateUrl: "templates/pages/about.html", controller: "PageCtrl"})
+      //.when("/fraternitylife/m", {templateUrl: "templates/pages/fraternitylife.html", controller: "PageCtrl"})
+      //.when("/about/m", {templateUrl: "templates/pages/about.html", controller: "PageCtrl"})
+      //.when("/recruitment/m", {templateUrl: "templates/pages/recruitment.html", controller: "PageCtrl"})
+      //.when("/alumni/m", {templateUrl: "templates/pages/alumni.html", controller: "PageCtrl"})
+      //.when("/login/m", {templateUrl: "templates/pages/login.html", controller: "PageCtrl"})
+      //.when("/scholarship/m", {templateUrl: "templates/pages/scholarship.html", controller: "PageCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "templates/404.html", controller: "PageCtrl"});
 }]);
