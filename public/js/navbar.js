@@ -3,7 +3,7 @@ window.onresize = function (event) {
     var leftmost = document.getElementById("first-nav");
     var logoRect = logo.getBoundingClientRect();
     var leftRect = leftmost.getBoundingClientRect();
-    if (logoRect.right > leftRect.left) {
+    if (logoRect.right >= leftRect.left) {
         logo.style.visibility = "hidden";
     }
     else {

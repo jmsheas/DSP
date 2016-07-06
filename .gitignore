@@ -16,3 +16,4 @@ public/img/exec/Thumbs.db
 public/img/exec/Thumbs.db
 *.db
 npm-debug.log
+.idea/typescript-compiler.xml

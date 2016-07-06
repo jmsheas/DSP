@@ -7,7 +7,7 @@
 
     width: 100%;
 
-    background: url('/img/background.jpg') no-repeat center center fixed;
+    background: url('../img/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -24,7 +24,7 @@
 
     width: 100%;
 
-    background: url('/img/background_blurred.jpg') no-repeat center center fixed;
+    background: url('../img/background_blurred.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -52,7 +52,7 @@
 }
 
 #title f1 {
-    font-family: Aharoni;
+    font-family: Aharoni, SansSerif;
     color: white;
     font-size: 10vh;
 }
@@ -72,6 +72,8 @@
     width: 0%;
     height: 3px;
     background: white;
+
+    margin-bottom: 10px;
 }
 
 #top-span {
@@ -81,6 +83,8 @@
     width: 0%;
     height: 3px;
     background: white;
+
+    margin-top: 5px;
 }
 
 #title span {
@@ -97,7 +101,7 @@
 #iconRack {
     width: 500px;
 
-    position: absolute;
+    position: fixed;
     top: 10%;
 
     padding-bottom: 5%;
