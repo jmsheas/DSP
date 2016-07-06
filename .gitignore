@@ -8,3 +8,6 @@ img/slide/Thumbs.db
 .idea/encodings.xml
 .idea/modules.xml
 .idea/DSP.iml
+.idea/jsLibraryMappings.xml
+public/img/exec/Thumbs.db
+*.db
