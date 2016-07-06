@@ -27,7 +27,21 @@ app.config(['$routeProvider', function ($routeProvider) {
 app.controller('PageCtrl', function (/* $scope, $location, $http */) {
   console.log("Page Controller reporting for duty.");
 
+  var bsn = require("bootstrap.native");
+
   // Activates the Carousel
+  var mainSlider = document.getElementById('myCarousel');
+  mainSlider.addEventListener('slid.bs.carousel', function(e) {
+    // get the caption of current active item before slide
+    var active = mainSlider.querySelector('.item.active .carousel-caption'); 
+    active.classList.remove('slide')
+  });
+  mainSlider.addEventListener('slide.bs.carousel', function(e) {
+    // get the caption of new active item after slide
+    var active = mainSlider.querySelector('.item.active .carousel-caption');
+    active.classList.add('slide')
+  }); 
+
   $('.carousel').carousel({
     interval: 5000
   });
