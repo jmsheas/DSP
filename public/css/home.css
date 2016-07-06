@@ -122,11 +122,11 @@
     animation-fill-mode: forwards;
 }
 
-#homePage:hover #overlayBG {
-    animation-name: blurOff;
-    animation-duration: 0.75s;
-    animation-fill-mode: forwards;
-}
+/*#homePage:hover #overlayBG {*/
+    /*animation-name: blurOff;*/
+    /*animation-duration: 0.75s;*/
+    /*animation-fill-mode: forwards;*/
+/*}*/
 
 #title:hover .line-span {
     animation-name: hoverOn-span;
