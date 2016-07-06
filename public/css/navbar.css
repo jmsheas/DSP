@@ -66,4 +66,12 @@
         color: white;
     }
 
+    #logo-nav {
+        display: none;
+    }
+
+    ul.nav a:focus {
+        color: rgb(34, 143, 84);
+    }
+
 }
