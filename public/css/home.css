@@ -38,8 +38,8 @@
 }
 
 #title {
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -60%);
 
@@ -101,7 +101,7 @@
 #iconRack {
     width: 500px;
 
-    position: fixed;
+    position: absolute;
     top: 10%;
 
     padding-bottom: 5%;
