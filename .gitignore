@@ -11,3 +11,5 @@ img/slide/Thumbs.db
 .idea/jsLibraryMappings.xml
 public/img/exec/Thumbs.db
 *.db
+.idea/libraries/DSP_node_modules.xml
+*.db
