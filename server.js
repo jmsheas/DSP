@@ -2,7 +2,7 @@
 //  OpenShift sample Node application
 var express = require("express");
 var fs = require('fs');
-var browserify = require('browserify');
+var browserify = require('browserify-middleware');
 
 
 var app = express();
@@ -17,5 +17,6 @@ app.listen(server_port, server_ip_address, function () {
 app.configure(function(){
     app.use(express.static(__dirname + '/public'));
     app.use('/node_modules', express.static(__dirname + '/node_modules'));
+    app.get('/js/bundle.js', browserify(__dirname + '/public/js/main.js'));
 });
 
