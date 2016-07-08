@@ -95,6 +95,12 @@ app.controller('scholarship', function() {
   };
 });
 
+app.controller('nav', function() {
+
+   require("bootstrap.native");
+
+});
+
 
 
 app.controller('recruitment', function() {
