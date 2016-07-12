@@ -1,6 +1,11 @@
+require('angular-route');
+require('angular-animate');
+require('angular-ui-bootstrap');
+require('angulartics');
+require('angulartics-google-analytics');
 
 var app = angular.module('DSP', [
-  'ngRoute', 'ui.bootstrap'
+  'ngRoute', 'ngAnimate', 'ui.bootstrap', 'angulartics', 'angulartics.google.analytics'
 ]);
 
 
@@ -25,8 +30,8 @@ app.config(['$routeProvider', function ($routeProvider) {
 /**
  * Controls all Pages
  */
-app.controller('PageCtrl', function (/* $scope, $location, $http */) {
-  console.log("Page Controller reporting for duty.");
+app.controller('PageCtrl', function ($scope) {
+
 
 
 

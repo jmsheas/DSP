@@ -1,5 +1,9 @@
 @media (min-width:481px){
 
+    #navmobile {
+        display: none;
+    }
+
     #navBarMain {
         width: 100%;
         height: 10%;
@@ -58,16 +62,16 @@
 
 @media (max-width: 480px){
 
+    #navfull {
+        display: none;
+    }
+
     #navBarMain {
         background-color: rgb(34, 143, 84);
     }
 
     .navItem a {
         color: white;
-    }
-
-    #logo-nav {
-        display: none;
     }
 
     ul.nav a:focus {

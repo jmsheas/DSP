@@ -1,19 +1,45 @@
 
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-            <a class="navbar-brand" href="#/">Delta Sigma Phi</a>
-        </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+        <div id="navmobile">
+            <div class="navbar-header">
+                <button type="button" ng-click="navsmall = !navsmall" class="navbar-toggle">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">Delta Sigma Phi</a>
+                   <!-- Note: use "collapse" here. The original "data-" settings are not needed anymore. -->
+                <div uib-collapse="!navsmall">
+                <div class="clearfix"></div>
+                <div class="navbar-collapse">
+                    <ul class="nav" id="navBarMain">
+                        <li class="navItem">
+                            <a href="#/about">About</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#/fraternitylife">Fraternity Life</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#/recruitment">Recruitment</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#/scholarship">Scholarship</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#/alumni">Alumni</a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#/login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="navfull">
             <ul class="nav" id="navBarMain">
                 <li id="logo-nav">
                     <a href="#/"><img id="logo" src="../img/logo_white.png"></a>
