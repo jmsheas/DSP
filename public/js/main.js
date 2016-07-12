@@ -37,11 +37,11 @@ app.controller('PageCtrl', function ($scope) {
 
 });
 
-app.controller('scholarship', function() {
-// fill the pdf form
-  // var pdfFiller = require('pdffiller');
+app.controller('scholarship', function($scope) {
 
-  function scholarship() {
+// fill the pdf form
+
+  $scope.scholarship = function() {
     var firstname = document.getElementById(firstname).value;
     var lastname = document.getElementById(lastname).value;
     var email = document.getElementById(email).value;
@@ -92,9 +92,14 @@ app.controller('scholarship', function() {
 
 
 
-app.controller('recruitment', function() {
+app.controller('recruitment', function($scope) {
 
-   //require("bootstrap.native");
+  $scope.myInterval = 5000;
+  $scope.slide = [
+    {image:'1.jpg'},
+    {image:'2.jpg'},
+    {image:'3.jpg'}
+  ];
 
 });
 

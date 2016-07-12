@@ -1,3 +1,14 @@
 #submit-button {
   margin-top: 15px;
 }
+
+#carousel {
+	height: 500px;
+	position: absolute;
+
+}
+
+img{
+  margin:auto;
+  width: 300px;
+}

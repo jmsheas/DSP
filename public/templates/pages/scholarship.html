@@ -29,81 +29,82 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>First Name</label>
-                                <input type="text" class="form-control" id="firstname" required=""/>
+                                <input type="text" class="form-control" ng-model="firstname" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Last Name</label>
-                                <input type="text" class="form-control" id="lastname" required=""/>
+                                <input type="text" class="form-control" ng-model="lastname" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Email</label>
-                                <input type="text" class="form-control" id="email" required=""/>
+                                <input type="text" class="form-control" ng-model="email" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Phone</label>
-                                <input type="text" class="form-control" id="phone" required=""/>
+                                <input type="text" class="form-control" ng-model="phone" required=""/>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Address Line</label>
-                                <input type="text" class="form-control" id="addressline" required=""/>
+                                <input type="text" class="form-control" ng-model="addressline" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>City</label>
-                                <input type="text" class="form-control" id="city" required=""/>
+                                <input type="text" class="form-control" ng-model="city" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>State</label>
-                                <input type="text" class="form-control" id="state" required=""/>
+                                <input type="text" class="form-control" ng-model="state" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>Zip Code</label>
-                                <input type="text" class="form-control" id="zip" required=""/>
+                                <input type="text" class="form-control" ng-model="zip" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>Date of Birth</label>
-                                <input type="text" class="form-control" id="birthday" required=""/>
+                                <input type="text" class="form-control" ng-model="birthday" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>High School</label>
-                                <input type="text" class="form-control" id="highschool" required=""/>
+                                <input type="text" class="form-control" ng-model="highschool" required=""/>
                             </div>
                             <div class="form-group col-md-2">
                                 <label>Class Rank <small>(Rank / Total)</small></label>
-                                <input type="text" class="form-control" id="classrank" required=""/>
+                                <input type="text" class="form-control" ng-model="classrank" required=""/>
                             </div>
                             <div class="form-group col-md-2">
                                 <label>GPA <small>(GPA / Total)</small></label>
-                                <input type="text" class="form-control" id="gpa" required=""/>
+                                <input type="text" class="form-control" ng-model="gpa" required=""/>
                             </div>
                             <div class="form-group col-md-2">
                                 <label>Current Year</label>
-                                <select class="form-control" id="year">
-                                    <option>Freshman</option>
-                                    <option>Sophomore</option>
-                                    <option>Junior</option>
-                                    <option>Senior</option>
+                                <select class="form-control" ng-model="year" required="">
+                                    <option value=""></option>
+                                    <option value="freshman">Freshman</option>
+                                    <option value="sophomore">Sophomore</option>
+                                    <option value="junior">Junior</option>
+                                    <option value="senior">Senior</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>Intended Major</label>
-                                <input type="text" class="form-control" id="major" required=""/>
+                                <input type="text" class="form-control" ng-model="major" required=""/>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Honors, Achievements, Awards</label>
-                                <textarea class="form-control" rows="3" id="honors" required=""></textarea>
+                                <textarea class="form-control" rows="3" ng-model="honors" required=""></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Community Service/Extracurricular Activities</label>
-                                <textarea class="form-control" rows="3" id="service" required=""></textarea>
+                                <textarea class="form-control" rows="3" ng-model="service" required=""></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Our fraternity prides itself on creating better men, that in turn, help the world around us. What are some specific qualities that a better man has? When in your life have you demonstrated one of these qualities, or when have you been challenged by another man to adopt some of these qualities? Please keep answer under 500 words.</label>
-                                <textarea class="form-control" rows="6" id="essay" required=""></textarea>
+                                <textarea class="form-control" rows="6" ng-model="essay" required=""></textarea>
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-lg btn-success" onclick="scholarship()">Submit</button>
+                                <button type="submit" class="btn btn-lg btn-success" ng-click="scholarship()">Submit</button>
                             </div>
                         </div>
                     </form>
