@@ -1,6 +1,4 @@
 
-require('angular-ui-bootstrap');
-
 var app = angular.module('DSP', [
   'ngRoute', 'ui.bootstrap'
 ]);
@@ -85,10 +83,6 @@ app.controller('scholarship', function() {
       console.log("In callback (we're done).");
     });
   };
-});
-
-app.controller('nav', function() {
-
 });
 
 
