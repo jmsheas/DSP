@@ -1,4 +1,5 @@
-<div class="container page-container">
+<div ng-controller='scholarship'>
+    <div class="container page-container">
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -25,59 +26,59 @@
                     <h2 class="text-center">
                     </h2>
                     <hr>
-                    <form role="form">
+                    <form role="form" ng-submit="scholarship()">
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>First Name</label>
-                                <input type="text" class="form-control" ng-model="firstname" required=""/>
+                                <input type="text" class="form-control" ng-model="form.firstname" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Last Name</label>
-                                <input type="text" class="form-control" ng-model="lastname" required=""/>
+                                <input type="text" class="form-control" ng-model="form.lastname" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Email</label>
-                                <input type="text" class="form-control" ng-model="email" required=""/>
+                                <input type="text" class="form-control" ng-model="form.email" required=""/>
                             </div>
                             <div class="form-group col-md-6">
                                 <label>Phone</label>
-                                <input type="text" class="form-control" ng-model="phone" required=""/>
+                                <input type="text" class="form-control" ng-model="form.phone" required=""/>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Address Line</label>
-                                <input type="text" class="form-control" ng-model="addressline" required=""/>
+                                <input type="text" class="form-control" ng-model="form.addressline" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>City</label>
-                                <input type="text" class="form-control" ng-model="city" required=""/>
+                                <input type="text" class="form-control" ng-model="form.city" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>State</label>
-                                <input type="text" class="form-control" ng-model="state" required=""/>
+                                <input type="text" class="form-control" ng-model="form.state" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>Zip Code</label>
-                                <input type="text" class="form-control" ng-model="zip" required=""/>
+                                <input type="text" class="form-control" ng-model="form.zip" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>Date of Birth</label>
-                                <input type="text" class="form-control" ng-model="birthday" required=""/>
+                                <input type="text" class="form-control" ng-model="form.birthday" required=""/>
                             </div>
                             <div class="form-group col-md-3">
                                 <label>High School</label>
-                                <input type="text" class="form-control" ng-model="highschool" required=""/>
+                                <input type="text" class="form-control" ng-model="form.highschool" required=""/>
                             </div>
                             <div class="form-group col-md-2">
                                 <label>Class Rank <small>(Rank / Total)</small></label>
-                                <input type="text" class="form-control" ng-model="classrank" required=""/>
+                                <input type="text" class="form-control" ng-model="form.classrank" required=""/>
                             </div>
                             <div class="form-group col-md-2">
                                 <label>GPA <small>(GPA / Total)</small></label>
-                                <input type="text" class="form-control" ng-model="gpa" required=""/>
+                                <input type="text" class="form-control" ng-model="form.gpa" required=""/>
                             </div>
                             <div class="form-group col-md-2">
                                 <label>Current Year</label>
-                                <select class="form-control" ng-model="year" required="">
+                                <select class="form-control" ng-model=" form.year" required="">
                                     <option value=""></option>
                                     <option value="freshman">Freshman</option>
                                     <option value="sophomore">Sophomore</option>
@@ -87,28 +88,29 @@
                             </div>
                             <div class="form-group col-md-3">
                                 <label>Intended Major</label>
-                                <input type="text" class="form-control" ng-model="major" required=""/>
+                                <input type="text" class="form-control" ng-model="form.major" required=""/>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Honors, Achievements, Awards</label>
-                                <textarea class="form-control" rows="3" ng-model="honors" required=""></textarea>
+                                <textarea class="form-control" rows="3" ng-model="form.honors" required=""></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Community Service/Extracurricular Activities</label>
-                                <textarea class="form-control" rows="3" ng-model="service" required=""></textarea>
+                                <textarea class="form-control" rows="3" ng-model="form.service" required=""></textarea>
                             </div>
                             <div class="form-group col-md-12">
                                 <label>Our fraternity prides itself on creating better men, that in turn, help the world around us. What are some specific qualities that a better man has? When in your life have you demonstrated one of these qualities, or when have you been challenged by another man to adopt some of these qualities? Please keep answer under 500 words.</label>
-                                <textarea class="form-control" rows="6" ng-model="essay" required=""></textarea>
+                                <textarea class="form-control" rows="6" ng-model="form.essay" required=""></textarea>
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-lg btn-success" ng-click="scholarship()">Submit</button>
+                                <button type="submit" class="btn btn-lg btn-success">Submit</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+    </div>
 </div>
